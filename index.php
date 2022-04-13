@@ -10,16 +10,16 @@
 	<!-- Meta Data -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="format-detection" content="telephone=no"/>
-	<meta name="format-detection" content="address=no"/>
+	<meta name="format-detection" content="telephone=yes"/>
+	<meta name="format-detection" content="address=yes"/>
 	<meta name="author" content="Song Phương Food"/>
-	<meta name="description" content="mô tả về web"/>
+	<meta name="description" content="Được thành lập vào ngày 20/03/2019, Công ty Cổ phần SX và TM Song Phương tự hào là đơn vị sản xuất,cung cấp các sản phẩm sạch từ nông sản như: Miến mộc, Phở khô, Bún khô, Đa nem, Ruốc Nấm…có chất lượng xuất khẩu, nguyên liệu sạch, an toàn,đầy đủ các chứng nhận VSATTP, HACCP…"/>
 	<!-- Open Graph data -->
 	<meta property="og:title" content="Song Phương Food"/>
 	<meta property="og:type" content="website"/>
 	<!-- <meta property="og:url" content=""/> -->
 	<meta property="og:image" content="assets/images/logo.png"/>
-	<meta property="og:description" content="mô tả về web"/>
+	<meta property="og:description" content="Được thành lập vào ngày 20/03/2019, Công ty Cổ phần SX và TM Song Phương tự hào là đơn vị sản xuất,cung cấp các sản phẩm sạch từ nông sản như: Miến mộc, Phở khô, Bún khô, Đa nem, Ruốc Nấm…có chất lượng xuất khẩu, nguyên liệu sạch, an toàn,đầy đủ các chứng nhận VSATTP, HACCP…"/>
 	<meta property="og:site_name" content="Trang chủ"/>
 	<meta property="og:locale" content="vi_VN">
 	<!-- Favicons -->
@@ -62,7 +62,7 @@
 				<div class="collapse navbar-collapse" id="navbars-rs-food">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="index.php">Trang chủ</a>
+							<a class="nav-link" href="">Trang chủ</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="Products">Sản phẩm</a>
@@ -153,7 +153,7 @@
 						<?php foreach($result as $item): ?>
 							<p><?=$item['details']?></p>
 						<?php endforeach ?>
-						<a class="btn btn-lg btn-circle btn-outline-new-white" href="#reviews">Đánh giá của khách hàng</a>
+						<a class="btn btn-lg btn-circle btn-outline-new-white" href="About">Giới thiệu</a>
 					</div>
 				</div>
 			</div>
@@ -167,12 +167,12 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
-						<h2>Sản phẩm</h2>
+						<h2>Sản phẩm nổi bật</h2>
 						<p>Click vào tên sản phẩm để biết thêm chi tiết!</p>
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-lg-12">
 					<div class="special-menu text-center">
 						<?php 
@@ -187,10 +187,10 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<div class="row special-list">
 				<?php 
-					$query = "select * from products where status=1";
+					$query = "select * from products where status=1 order by rand() limit 3";
 					$result = $connect -> query($query);
 				?>
 				<?php foreach($result as $item): ?>
@@ -212,6 +212,9 @@
 					</div>
 				<?php endforeach ?>
 			</div>
+			<center class="inner-column">
+				<a class="btn btn-lg btn-circle btn-outline-new-white" href="Products">Tất cả sản phẩm</a>
+			</center>
 		</div>
 	</div>
 	<!-- End Menu -->
@@ -229,7 +232,7 @@
 			<div class="tz-gallery">
 				<div class="row">
 					<?php 
-						$query = "select * from images where typeId = 5 limit 6";
+						$query = "select * from images where typeId = 5 order by rand() limit 3";
 						$result = $connect -> query($query);
 					?>
 					<?php foreach($result as $item): ?>
@@ -241,6 +244,9 @@
 					<?php endforeach ?>
 				</div>
 			</div>
+			<center class="inner-column">
+				<a class="btn btn-lg btn-circle btn-outline-new-white" href="Gallery">Xem toàn bộ ảnh</a>
+			</center>
 		</div>
 	</div>
 	<!-- Start Customer Reviews -->
