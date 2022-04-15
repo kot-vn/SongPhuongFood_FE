@@ -2,7 +2,15 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta name="format-detection" content="telephone=yes"/>
+	<meta charset="utf-8" />
+	<title>Thư viện - Song Phương Food</title>
+	<meta property="og:image" content="../assets/images/logo.png">
+    <meta property="og:image:width" content="1280"/>
+    <meta property="og:image:height" content="720"/>
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
+	<meta name="format-detection" content="telephone=yes"/>
 	<meta name="format-detection" content="address=yes"/>
 	<meta name="author" content="Song Phương Food"/>
 	<meta name="description" content="Được thành lập vào ngày 20/03/2019, Công ty Cổ phần SX và TM Song Phương tự hào là đơn vị sản xuất,cung cấp các sản phẩm sạch từ nông sản như: Miến mộc, Phở khô, Bún khô, Đa nem, Ruốc Nấm…có chất lượng xuất khẩu, nguyên liệu sạch, an toàn,đầy đủ các chứng nhận VSATTP, HACCP…"/>
