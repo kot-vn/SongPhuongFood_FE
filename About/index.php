@@ -10,16 +10,16 @@
 	<!-- Meta Data -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="format-detection" content="telephone=no"/>
-	<meta name="format-detection" content="address=no"/>
+	<meta name="format-detection" content="telephone=yes"/>
+	<meta name="format-detection" content="address=yes"/>
 	<meta name="author" content="Song Phương Food"/>
-	<meta name="description" content="mô tả về web"/>
+	<meta name="description" content="Được thành lập vào ngày 20/03/2019, Công ty Cổ phần SX và TM Song Phương tự hào là đơn vị sản xuất,cung cấp các sản phẩm sạch từ nông sản như: Miến mộc, Phở khô, Bún khô, Đa nem, Ruốc Nấm…có chất lượng xuất khẩu, nguyên liệu sạch, an toàn,đầy đủ các chứng nhận VSATTP, HACCP…"/>
 	<!-- Open Graph data -->
-	<meta property="og:title" content="Giới thiệu - Song Phương Food"/>
+	<meta property="og:title" content="Song Phương Food"/>
 	<meta property="og:type" content="website"/>
 	<!-- <meta property="og:url" content=""/> -->
 	<meta property="og:image" content="../assets/images/logo.png"/>
-	<meta property="og:description" content="mô tả về web"/>
+	<meta property="og:description" content="Được thành lập vào ngày 20/03/2019, Công ty Cổ phần SX và TM Song Phương tự hào là đơn vị sản xuất,cung cấp các sản phẩm sạch từ nông sản như: Miến mộc, Phở khô, Bún khô, Đa nem, Ruốc Nấm…có chất lượng xuất khẩu, nguyên liệu sạch, an toàn,đầy đủ các chứng nhận VSATTP, HACCP…"/>
 	<meta property="og:site_name" content="Giới thiệu"/>
 	<meta property="og:locale" content="vi_VN">
 	<!-- Favicons -->
