@@ -41,6 +41,39 @@
 	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css"/>
 	<link rel="stylesheet" href="../assets/styles/responsive.css">
 	<link rel="stylesheet" href="../assets/styles/custom.css">
+	<!-- Custom table -->
+	<style>
+		.table td, .table th{
+			border: none;
+			border-top: 1px solid #dee2e6;
+		}
+		.table-fixed tbody {
+			height: 500px;
+			overflow-y: auto;
+			width: 100%;
+		}
+
+		.table-fixed thead,
+		.table-fixed tbody,
+		.table-fixed tr,
+		.table-fixed td,
+		.table-fixed th {
+			display: block;
+		}
+
+		.table-fixed tbody td,
+		.table-fixed tbody th,
+		.table-fixed thead > tr > th {
+			float: left;
+			position: relative;
+
+			&::after {
+				content: '';
+				clear: both;
+				display: block;
+			}
+		}
+	</style>
 </head>
 <body>
 	<!-- Start header -->
@@ -102,9 +135,37 @@
 				</div>
 			</div>
 		</div>
-		<!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Tr-pY0AYj3es_EnUvdWbndadTZssbKUm&ehbc=2E312F" width="100%" height="500px"></iframe> -->
-		<div class="coming-soon">
+		<!-- <div class="coming-soon">
 			<img src="../assets/images/Untitled-1.png">
+		</div> -->
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-12 mx-auto bg-white rounded shadow">
+					<!-- Fixed header table-->
+					<div class="table-responsive">
+						<table class="table table-fixed">
+							<thead>
+								<tr>
+									<th scope="col" class="col-5">Tên cửa hàng</th>
+									<th scope="col" class="col-7">Địa chỉ</th>
+								</tr>
+							</thead>
+							<?php 
+								$query = "select * from shops where status=1";
+								$result = $connect -> query($query);
+							?>
+							<tbody>
+								<?php foreach($result as $item): ?>
+									<tr>
+										<td class="col-5"><?=$item['name']?></td>
+										<td class="col-7"><?=$item['address']?></td>
+									</tr>
+								<?php endforeach ?>
+							</tbody>
+						</table>
+					</div><!-- End -->
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- End Map -->

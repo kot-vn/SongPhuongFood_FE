@@ -330,9 +330,7 @@
 						?>
 						<?php foreach($result as $item): ?>
 							<p class="lead">
-								<a href="tel: <?=$item['details']?>">
-									<?=$item['details']?>
-								</a>
+								<?=$item['details']?>
 							</p>
 						<?php endforeach ?>
 						<?php 
@@ -396,8 +394,8 @@
 							<center style="padding-top: 10px; font-weight: bold;"><span><?=isset($alert)?$alert:""?></span></center>
 						</div>
 						<ul class="list-inline f-social" style="display: flex; justify-content: center; align-items: center; align-content: center;">
-							<li class="list-inline-item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
-							<li class="list-inline-item"><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.facebook.com/Song-Ph%C6%B0%C6%A1ng-Food-103842751860224" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.facebook.com/messages/t/103842751860224" target="_blank"><i class="fab fa-facebook-messenger"></i></a></li>
 						</ul>
 					</div>
 				</div>
