@@ -131,6 +131,7 @@
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
 						<h2>Bản đồ hệ thống phân phối</h2>
+						<span>Nhấn vào địa chỉ để hiển thị trên Google Map</span>
 					</div>
 				</div>
 			</div>
@@ -146,8 +147,8 @@
 						<table class="table table-fixed">
 							<thead>
 								<tr>
-									<th scope="col" class="col-5">Tên cửa hàng</th>
-									<th scope="col" class="col-7">Địa chỉ</th>
+									<th scope="col" class="col-6">Tên cửa hàng</th>
+									<th scope="col" class="col-6">Địa chỉ</th>
 								</tr>
 							</thead>
 							<?php 
@@ -157,8 +158,12 @@
 							<tbody>
 								<?php foreach($result as $item): ?>
 									<tr>
-										<td class="col-5"><?=$item['name']?></td>
-										<td class="col-7"><?=$item['address']?></td>
+										<td class="col-6"><?=$item['name']?></td>
+										<td class="col-6">
+											<a href="https://www.google.com/maps/search/<?=$item['name']?>+<?=$item['address']?>" target="_blank">
+												<?=$item['address']?>
+											</a>
+										</td>
 									</tr>
 								<?php endforeach ?>
 							</tbody>
