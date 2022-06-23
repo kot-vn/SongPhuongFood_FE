@@ -160,12 +160,12 @@
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<h3>Giờ hoạt động</h3>
-					<p><span class="text-color">Thứ 2: </span>9AM - 10PM</p>
-					<p><span class="text-color">Thứ 3: </span>9AM - 10PM</p>
-					<p><span class="text-color">Thứ 4: </span>9AM - 10PM</p>
-					<p><span class="text-color">Thứ 5: </span>9AM - 10PM</p>
-					<p><span class="text-color">Thứ 6: </span>9AM - 10PM</p>
-					<p><span class="text-color">Thứ 7: </span>9AM - 10PM</p>
+					<p><span class="text-color">Thứ 2: </span>8AM - 17PM</p>
+					<p><span class="text-color">Thứ 3: </span>8AM - 17PM</p>
+					<p><span class="text-color">Thứ 4: </span>8AM - 17PM</p>
+					<p><span class="text-color">Thứ 5: </span>8AM - 17PM</p>
+					<p><span class="text-color">Thứ 6: </span>8AM - 17PM</p>
+					<p><span class="text-color">Thứ 7: </span>8AM - 17PM</p>
 					<p><span class="text-color">Chủ nhật: </span>Đóng cửa</p>
 				</div>
 				<div class="col-lg-3 col-md-6">
