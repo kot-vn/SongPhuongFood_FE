@@ -135,7 +135,12 @@
 						$result = $connect -> query($query);
 					?>
 					<?php foreach($result as $item): ?>
-						<img src="assets/images/<?=$item['name']?>" alt="" class="img-fluid">
+						<!-- <img src="assets/images/<?=$item['name']?>" alt="" class="img-fluid"> -->
+						<video class="img-fluid" autoplay controls>
+							<source src="assets/images/<?=$item['name']?>.mp4" type="video/mp4">
+							<source src="assets/images/<?=$item['name']?>.ogg" type="video/ogg">
+							Your browser does not support the video tag.
+						</video>
 					<?php endforeach ?>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 text-center">
